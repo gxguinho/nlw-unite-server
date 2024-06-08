@@ -2,18 +2,23 @@ POST http://localhost:3333/events
 Content-Type: application/json
 
 {
-    "title": "Unite Sumittt1",
+    "title": "Unite Sumittt11",
     "details": "Um evento ara quem é apaixonado por programação",
     "maximumAttendees": 1
 }
 
 ###
-
-
-POST http://localhost:3333/events/81a3f6db-45bf-4a6f-b10c-bcaf8837ac43/attendees
+POST http://localhost:3333/events/b6263535-5084-4e1e-8b63-5c6437a4f805/attendees
 Content-Type: application/json
 
 {
   "name": "Diego Fernandes",
   "email": "diego2@rocketseat.com.br"
 }
+
+###
+
+GET http://localhost:3333/events/b6263535-5084-4e1e-8b63-5c6437a4f805
+
+###
+GET http://localhost:3333/attendees/1/badge
